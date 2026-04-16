@@ -1,6 +1,14 @@
-from pathlib import Path
+'''
+--------------------------
+Group Name:DAN/EXT 14
+1st Member:Rejan Sapkota(Student ID: s400142)
+2nd Member:Saroj Dhakal(Student ID: s399846)
+3rd Member:Raman Lamichhane(Student ID: s401547)
+4th Member:Suraj Kandel(Student ID: s395871 )
+--------------------------
+'''
 
-
+from pathlib import Path # Python module used to work with files and folders (paths) in an easy and clean way.
 # ----------------------------------------
 # Main function required by assignment
 # ----------------------------------------
