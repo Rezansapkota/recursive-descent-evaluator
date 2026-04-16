@@ -1,5 +1,3 @@
-
-
 '''
 --------------------------
 Group Name:DAN/EXT 14
@@ -209,7 +207,14 @@ def parse_term(p):
             op = advance(p)["value"]
             right, rval = parse_factor(p)
 
-            val = val * rval if op == "*" else val / rval
+            if op == "*":
+                 val = val * rval
+            else:
+                if rval == 0:
+                   raise ZeroDivisionError()  
+       
+                val = val / rval
+
 
             left = {"k": "bin", "op": op, "l": left, "r": right}
             continue
