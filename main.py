@@ -165,6 +165,8 @@ def tokenize(text):
 # PARSER HELPERS
 # ----------------------------------------
 def current(p):
+    if p["pos"] >= len(p["tokens"]):
+        return {"type": "END"}
     return p["tokens"][p["pos"]]
 
 
